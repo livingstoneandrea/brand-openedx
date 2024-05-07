@@ -1,2 +1,18 @@
 // Use this file to define style overrides for @edx/paragon
 // This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
+
+
+/////// Make the primary color match ICS
+
+$primary: #6e1d2b; 
+$primary-light: #f09eab; 
+
+
+#root .layout .bg-primary-400 h1 .text-accent-a {
+    color: $primary !important;
+}
+
+#root .layout .content #main-content .btn-brand {
+    background-color: #6e1d2b !important;
+    border-color: #6e1d2b !important;
+}
